@@ -1,0 +1,145 @@
+---
+title: 测试页面
+date: 2023-03-17 11:54:10
+tags:
+categories: [可转债]
+---
+
+# 使用可转债的正股替代策略？
+
+![FeaehznaUAE5nTX](https://img0.baidu.com/it/u=4020556074,1867514664&fm=253&fmt=auto&app=120&f=JPEG?w=750&h=390)
+
+
+
+![FkvBCLvagAAg7jN](https://img0.baidu.com/it/u=4020556074,1867514664&fm=253&fmt=auto&app=120&f=JPEG?w=750&h=390)
+## 表情
+{% emoji tieba 滑稽 %}
+
+## 多一行
+
+---
+
+### 颜色
+{% mark 默认 %} {% mark 红 color:red %} {% mark 橙 color:orange %} {% mark 黄 color:yellow %} {% mark 绿 color:green %} {% mark 青 color:cyan %} {% mark 蓝 color:blue %} {% mark 紫 color:purple %} {% mark 浅 color:light %} {% mark 深 color:dark %} {% mark 警告 color:warning %} {% mark 错误 color:error %} 一共 12 种颜色。
+---
+
+## tag测试
+---
+{% tag Stellar https://xaoxuu.com/wiki/stellar/ %}
+{% tag Hexo https://hexo.io/ %}
+{% tag GitHub https://github.com/xaoxuu/ %}
+{% tag Gitea https://git.xaoxuu.com/ color:green %}
+
+---
+{% quot Stellar 是最好用的主题 %}
+
+{% navbar active:1 [文章](/) [项目](/wiki/) [留言](#comments) [GitHub](https://github.com/xaoxuu/) %}
+
+{% image https://img0.baidu.com/it/u=4020556074,1867514664&fm=253&fmt=auto&app=120&f=JPEG?w=750&h=390 %}
+
+{% note title:Thisistitle Thisiscomment color:red %}
+
+{% timeline %}
+<!-- node 第一步：打开 GitHub -->
+打开 [Stellar](https://github.com/xaoxuu/hexo-theme-stellar/) 的 GitHub 页面。
+<!-- node 第二步：点击 Star -->
+如果发现右上角的 Star 还没点亮，就点亮它！
+{% endtimeline %}
+
+{% timeline api:https://api.github.xaox.cc/repos/xaoxuu/hexo-theme-stellar/issues?labels=1.x+版本&per_page=3 %}
+{% endtimeline %}
+
+
+
+{% timeline hide:title,footer api:https://api.github.xaox.cc/repos/xaoxuu/hexo-theme-stellar/issues?state=all&labels=分享&per_page=3 %}
+{% endtimeline %}
+
+
+## 容器类标签
+{% ablock Stellar v1.12.0 color:warning %}
+因为原 noteblock 标签在升级到 hexo 6.0 之后跟官方库冲突了，官方一直没有解释原因，后不得不改名：
+noteblock -> grid -> border
+详情见：[#172](https://github.com/volantis-x/hexo-theme-volantis/issues/712)
+{% endablock %}
+
+{% folding child:codeblock open:true color:red 默认打开的代码折叠框 %}
+```python
+# main func
+def main():
+    print('hello')
+```
+{% endfolding %}
+
+## 折叠
+
+{% folders %}
+<!-- folder 题目1 -->
+这是答案1
+<!-- folder 题目2 -->
+这是答案2
+<!-- folder 题目3 -->
+这是答案3
+{% endfolders %}
+
+## tab 
+
+{% tabs active:2 align:center %}
+
+<!-- tab 图片 -->
+{% image https://img0.baidu.com/it/u=4020556074,1867514664&fm=253&fmt=auto&app=120&f=JPEG?w=750&h=390 width:300px %}
+
+<!-- tab 代码块 -->
+```python
+def main():
+    print("hello world")
+```
+
+<!-- tab 表格 -->
+| a | b | c |
+| --- | --- | --- |
+| a1 | b1 | c1 |
+| a2 | b2 | c2 |
+
+{% endtabs %}
+
+## grid 
+
+{% grid bg:block %}
+<!-- cell left -->
+<center>
+```golang
+func main():
+    fmt.Println("start")
+```
+</center>
+
+<!-- cell right -->
+<center>
+{% image https://images.unsplash.com/photo-1586374579358-9d19d632b6df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80 %}
+</center>
+{% endgrid %}
+
+## about
+{% about avatar:https://xaoxuu.com/assets/xaoxuu/avatar/rect-256@2x.png height:80px %}
+
+<img height="32px" alt="XAOXUU" src="https://xaoxuu.com/assets/xaoxuu/avatar/rect-256@2x.png">
+
+**如果宇宙中真有什么终极的逻辑，那就是我们终有一天会在舰桥上重逢，直到生命终结。**
+
+XAOXUU 目前是一个 iOS 开发者，代表作品有：ProHUD、ValueX 等。在业余时间也开发了 Stellar 博客主题，更多的作品可以去项目主页查看，希望大家喜欢～
+
+{% navbar [文章](/) [项目](/wiki/) [留言](#comments) [GitHub](https://github.com/xaoxuu/) %}
+
+{% endabout %}
+
+## 轮播图
+{% swiper effect:coverflow %}
+
+![](https://img0.baidu.com/it/u=4020556074,1867514664&fm=253&fmt=auto&app=120&f=JPEG?w=750&h=390)
+![](https://img0.baidu.com/it/u=4020556074,1867514664&fm=253&fmt=auto&app=120&f=JPEG?w=750&h=390)
+![](https://images.unsplash.com/photo-1542272201-b1ca555f8505?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80)
+
+![](https://images.unsplash.com/photo-1524797905120-92940d3a18d6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80)
+
+![](https://images.unsplash.com/photo-1524797905120-92940d3a18d6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80)
+{% endswiper %}
